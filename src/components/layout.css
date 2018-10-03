@@ -16,9 +16,10 @@ a {
 
 .Hero {
   background: url('https://source.unsplash.com/random');
-  height: 920px;
+  height: 700px;
   background-size: cover;
   background-position: center;
+  margin: 0px;
 }
 
 .HeroGroup {
