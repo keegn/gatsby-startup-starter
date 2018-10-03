@@ -8,7 +8,6 @@ const Header = ({ siteTitle }) => (
       <Link to="/"><img src={logo} alt="logo" width="30"></img></Link>
       <Link to="/courses">Product</Link>
       <Link to="/courses">Pricing</Link>
-      <Link to="/courses">About</Link>
       <Link to="/courses">Get started</Link>
     </div>
   </div>
