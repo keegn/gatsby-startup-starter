@@ -1,9 +1,10 @@
 .Header {
     position: fixed;
-    height: 60px;
+    height: 40px;
     width: 100%;
-    padding: 40px 0;
+    padding: 20px 0;
     z-index: 100;
+    background: white;
 }
 
 .HeaderGroup {
@@ -16,8 +17,9 @@
 }
 
 .Header a {
-    color: white;
+    color: #333e48;
     text-decoration: none;
+    font-size: 16px;
 }
 
 .Header button {
