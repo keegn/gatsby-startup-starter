@@ -10,6 +10,7 @@ const Header = ({ siteTitle }) => (
       <Link to="/"><img src={logo} alt="logo" width="30"></img></Link>
       <Link to="/product">Product</Link>
       <Link to="/pricing">Pricing</Link>
+      <Link to="/about">About</Link>
       <Link to="/sign-up"><button>Get Demo</button></Link>
     </div>
   </div>
