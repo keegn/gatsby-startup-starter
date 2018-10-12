@@ -15,7 +15,7 @@ a {
 }
 
 .Hero {
-  background: url('https://source.unsplash.com/random');
+  background: white;
   height: 540px;
   background-size: cover;
   background-position: center;
@@ -30,7 +30,7 @@ a {
 }
 .Hero h1 {
   margin: 0;
-  color: white;
+  color: #233e48;
   font-size: 54px;
   line-height: 1.2;
 }
@@ -46,7 +46,7 @@ a {
 }
 
 .Hero p {
-  color: rgba(255, 255, 255, .9);
+  color: rgba(51, 62, 72, .9);
   line-height: 1.2;
   font-size: 24px;
   padding: 0 0 16px 0;

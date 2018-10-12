@@ -8,7 +8,7 @@ const HeaderContainer = styled.div`
   position: fixed;
     height: 40px;
     width: 100%;
-    padding: 20px 0;
+    padding: 40px 0;
     z-index: 100;
     background: white;
 `
