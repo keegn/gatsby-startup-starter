@@ -3,7 +3,6 @@ import { Link } from 'gatsby'
 import logo from '../images/gatsby-icon.png'
 import styled from 'styled-components'
 // we could also {require('../images/gatsby-icon.png')} within the src={} - helpful if you have lots of images
-import './Header.css'
 
 const HeaderContainer = styled.div`
   position: fixed;
