@@ -1,1 +1,4 @@
-## A Gatsby Theme for startups
+## A Gatsby theme for startups
+
+####
+Work in progress.
