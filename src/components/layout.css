@@ -16,7 +16,7 @@ a {
 
 .Hero {
   background: url('https://source.unsplash.com/random');
-  height: 620px;
+  height: 540px;
   background-size: cover;
   background-position: center;
   margin: 0px;
@@ -28,30 +28,39 @@ a {
   padding: 150px 50px;
   text-align: center;
 }
-
 .Hero h1 {
   margin: 0;
   color: white;
-  font-size: 60px;
+  font-size: 54px;
   line-height: 1.2;
 }
 
+@media (max-width: 600px) {
+  .HeroGroup {
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 110px 50px;
+    text-align: center;
+  }
+
+}
+
 .Hero p {
-  color: rgba(255, 255, 255, .8);
+  color: rgba(255, 255, 255, .9);
   line-height: 1.2;
-  font-size: 30px;
+  font-size: 24px;
+  padding: 0 0 16px 0;
 }
 
 .Hero a {
   font-size: 17px;
   font-weight: 600;
   color: white;
-  text-transform: uppercase;
-  background: rgba(0, 0, 0, .7);
-  padding: 9px 20px;
+  text-transform: none;
+  background: rgba(85, 58, 235, 1);
+  padding: 12px 40px;
   text-decoration: none;
-  border: 1px solid rgba(255, 255, 255, .25);
-  border-radius: 20px;
+  border-radius: 1px;
 }
 
 

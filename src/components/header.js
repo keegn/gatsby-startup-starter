@@ -26,15 +26,7 @@ const HeaderLink = styled(Link)`
   font-size: 16px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 `
-const HeaderButton = styled.button`
-  padding: 8px 12px;
-  background-color:#5F3893;
-  color: white;
-  font-size: 16px;
-  font-weight: 600;
-  border: none;
-  border-radius: 4px;
-`
+
 
 const Header = ({ siteTitle }) => (
   <HeaderContainer>
@@ -42,7 +34,7 @@ const Header = ({ siteTitle }) => (
       <HeaderLink to="/"><img src={logo} alt="logo" width="30"></img></HeaderLink>
       <HeaderLink to="/product">Product</HeaderLink>
       <HeaderLink to="/pricing">Pricing</HeaderLink>
-      <Link to="/sign-up"><HeaderButton>Get Demo</HeaderButton></Link>
+      <HeaderLink to="/sign-up">Get Demo</HeaderLink>
     </HeaderGroup>
   </HeaderContainer>
 )
