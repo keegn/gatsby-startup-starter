@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import logo from '../images/gatsby-icon.png'
+import polygon from '../images/polygon-purple.svg'
 import styled from 'styled-components'
 // we could also {require('../images/gatsby-icon.png')} within the src={} - helpful if you have lots of images
 
@@ -31,7 +32,7 @@ const HeaderLink = styled(Link)`
 const Header = ({ siteTitle }) => (
   <HeaderContainer>
     <HeaderGroup>
-      <HeaderLink to="/"><img src={logo} alt="logo" width="30"></img></HeaderLink>
+      <HeaderLink to="/"><img src={polygon} alt="logo" width="20"></img></HeaderLink>
       <HeaderLink to="/product">Product</HeaderLink>
       <HeaderLink to="/pricing">Pricing</HeaderLink>
       <HeaderLink to="/sign-up">Get Demo</HeaderLink>
