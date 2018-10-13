@@ -1,10 +1,10 @@
 # A minimalist Gatsby starter theme for startups
 
 ## 🚧 status
-~~Navigation~~
-Mobile navigation
-Hero section
-Features section
+~~Navigation~~ <br />
+Mobile navigation <br />
+Hero section <br />
+Features section <br />
 Email signup
 Footer
   
