@@ -5,7 +5,7 @@
 Mobile navigation <br />
 Hero section <br />
 Features section <br />
-Email signup
+Email signup <br />
 Footer
   
 ## authors
