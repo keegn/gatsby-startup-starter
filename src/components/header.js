@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import logo from '../images/gatsby-icon.png'
 import polygon from '../images/polygon-purple.svg'
 import styled from 'styled-components'
 // we could also {require('../images/gatsby-icon.png')} within the src={} - helpful if you have lots of images

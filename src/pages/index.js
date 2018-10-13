@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import {Hero, HeroGroup, HeroGroupH1, HeroP, HeroA } from '../components/sharedstyles'
+import {Hero, HeroGroup, HeroGroupH1, HeroP, HeroA, HeroSplit } from '../components/global-styles'
 
 import Layout from '../components/layout'
 

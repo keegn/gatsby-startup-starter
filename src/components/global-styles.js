@@ -1,4 +1,27 @@
-import styled from 'styled-components'
+import  styled from 'styled-components'
+import { injectGlobal } from 'styled-components'
+import styledNormalize from 'styled-normalize'
+
+// Normalize reset
+injectGlobal`
+  ${styledNormalize}
+    html {
+        font-size: 62.5%;
+    }
+  body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  font-size: 2rem;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.4;
+}
+
+a {
+  color: #5334F5;
+  font-weight: 600;
+}
+`
+// End normalize
 
 // Hero
 export const Hero = styled.div`
@@ -20,6 +43,12 @@ export const HeroGroup = styled.div`
       text-align: center;
     }
 `
+export const HeroSplit = styled.div`
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+    justify-items: center;
+`
 export const HeroGroupH1 = styled.h1`
     margin: 0;
     color: #233e48;
@@ -33,7 +62,7 @@ export const HeroP= styled.p`
     padding: 0 0 16px 0;
 `
 export const HeroA= styled.a`
-    cfont-size: 17px;
+    font-size: 17px;
     font-weight: 600;
     color: white;
     text-transform: none;
@@ -43,3 +72,8 @@ export const HeroA= styled.a`
     border-radius: 1px;
 `
 // End Hero
+
+// Buttons
+
+// Inputs
+
