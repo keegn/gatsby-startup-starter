@@ -1,6 +1,5 @@
-import styled, { keyframes, injectGlobal }  from 'styled-components'
+import styled, { keyframes, injectGlobal } from 'styled-components'
 import styledNormalize from 'styled-normalize'
-
 
 injectGlobal`
   ${styledNormalize}
@@ -28,7 +27,7 @@ a {
     font-weight: 600;
 }
 `
-// Keyframes 
+// Keyframes
 
 const HeroAnimation = keyframes`
   0% {
@@ -51,7 +50,7 @@ export const LogoAnimation = keyframes`
 // Hero
 export const Hero = styled.div`
   background: white;
-  height: 540px;
+  height: 680px;
   background-size: cover;
   background-position: center;
   margin: 0px;
@@ -82,16 +81,16 @@ export const HeroGroupH1 = styled.h1`
   opacity: 0;
   animation: ${HeroAnimation};
   animation-duration: 2s;
-  animation-delay: .01s;
+  animation-delay: 0.01s;
   animation-fill-mode: forwards;
-  animation-timing-function: cubic-bezier(.2, .8, .2, 1);
+  animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
 `
 export const HeroP = styled.p`
   color: rgba(51, 62, 72, 0.9);
   line-height: 1.2;
   font-size: 20px;
   padding: 0 0 16px 0;
-  animation: ${HeroAnimation} 2s 0.2s forwards cubic-bezier(.2, .8, .2, 1);
+  animation: ${HeroAnimation} 2s 0.2s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
   opacity: 0;
 `
 export const HeroA = styled.button`
@@ -106,15 +105,28 @@ export const HeroA = styled.button`
   outline: none;
   border: none;
   cursor: pointer;
-  transition: .2s cubic-bezier(.2, .8, .2, 1);
+  transition: 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
   &:hover {
-      background: rgba(85, 58, 235, 1);
-      box-shadow: 0 10px 20px rgba(0, 0 , 0, 0.15);
-      transform: translateY(-2px);
+    background: rgba(85, 58, 235, 1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
   }
 `
 // End Hero
 
+// Section
+
+export const StyledSection = styled.section`
+  height: 500px;
+  background-position: center;
+  background: rgba(85, 58, 235, 1);
+  position: relative;
+  svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+`
 
 // Buttons
 
