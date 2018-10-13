@@ -1,12 +1,12 @@
 # A minimalist Gatsby starter theme for startups
 
 ## 🚧 status
-- [ ] Navigation
-- [ ] Mobile navigation
-- [ ] Hero section
-- [ ] Features section
-- [ ] Email signup
-- [ ] Footer
+~~Navigation~~
+Mobile navigation
+Hero section
+Features section
+Email signup
+Footer
   
 ## authors
 Keegan Burkett
