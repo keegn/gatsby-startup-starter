@@ -24,8 +24,8 @@ const IndexPage = () => (
       </HeroGroup>
     </Hero>
     <Section
-      title="This is the title"
-      text="Here is some nice text."
+      // title="This is the title"
+      // text="Here is some nice text."
     />
   </Layout>
 )
