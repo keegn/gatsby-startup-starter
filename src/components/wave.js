@@ -1,6 +1,22 @@
 import React from 'react'
+import styled from 'styled-components'
 
-const Wave = () => (
+export const WaveBottom = styled.div`
+    positiion: absolute;
+    width: 100%;
+    bottom: 0;
+    
+`
+
+export const WaveTop= styled.div`
+    positiion: absolute;
+    width: 100%;
+    top: 0;
+    height: 100px;
+    transform: rotate(180deg);
+`
+
+export const Wave = () => (
   <svg
     width="100%"
     height="172"
@@ -27,4 +43,3 @@ const Wave = () => (
   </svg>
 )
 
-export default Wave

@@ -1,72 +1,59 @@
 import React from 'react'
 import styled from 'styled-components'
-import Wave from './wave'
 
 const SectionGroup = styled.div`
-    background: rgba(135, 78, 244, .05);
-    height: 600px;
-    display: grid;
-    grid-template-rows: 200px auto;
-    grid-gap: 20px;
-    position: relative;
-    @media (max-width: 600px) {
-        margin-top: 24px;
-    }
+  background: white;
+  padding: 75px 0;
+  height: 400px;
+  display: grid;
+  position: relative;
+  @media (max-width: 600px) {
+    margin-top: 24px;
+  }
+`
+const SectionCard = styled.div`
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: top;
+  justify-items: center;
+  border-radius: 4px;
+  @media (max-width: 700px) {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
 `
 
-const SplitSection = styled.div`
-    display: grid;
-    grid-template-columns: 2;
-`
-const SectionLogo = styled.img`
-    align-self: end;
-    width: 128px;
-    margin: 0 auto;
+const SectionImg = styled.img`
+  width: 500px;
+  z-index: 100;
+  order: ${props => props.alternate ? `-1` : `0`};
 `
 const SectionTitleGroup = styled.div`
-    display: grid;
-    grid-template-columns:1fr 1fr;
-    align-items: center;
-    justify-items: center;
-    margin: 0 40px;
-    grid-gap: 20px;
-    grid-template-rows: auto 100%;
-    @media (max-width: 720px) {
-        grid-template-columns: 1fr;
-    }
+  margin: 0 50px;
+  order: ${props => props.alternate ? `1` : `0`};
+  @media (max-width: 720px) {
+    margin: 0;
+  }
 `
 const SectionTitle = styled.h3`
-    font-size: 32px;
-    margin: 0;
-    line-height: 1.2;
-    color: rgba(22, 23, 26, 1);
+  font-size: 32px;
+  margin: 0;
+  line-height: 1.2;
+  color: rgba(22, 23, 26, 1);
 `
 const SectionText = styled.p`
-    color: rgba(22, 23, 26, 1);
-`
-const WaveBottom = styled.div`
-    positiion: absolute;
-    width: 100%;
-    bottom: 0;
-    height: 100px;
+  color: rgba(22, 23, 26, 1);
 `
 
-const WaveTop= styled.div`
-    positiion: absolute;
-    width: 100%;
-    top: 0;
-    height: 120px;
-    transform: rotate(180deg);
-`
 const Section = props => (
   <SectionGroup>
-  <WaveTop><Wave /></WaveTop>
-    <SectionLogo src={props.logo} />
-    <SectionTitleGroup>
-      <SectionTitle>{props.title}</SectionTitle>
-      <SectionText>{props.text}</SectionText>
-    </SectionTitleGroup>
-    <WaveBottom><Wave /></WaveBottom>
+    <SectionCard>
+      <SectionTitleGroup alternate={props.alternate}>
+        <SectionTitle>{props.title}</SectionTitle>
+        <SectionText>{props.text}</SectionText>
+      </SectionTitleGroup>
+      <SectionImg src={props.img}/>
+    </SectionCard>
   </SectionGroup>
 )
 

@@ -7,7 +7,7 @@ import {
   HeroA,
 } from '../components/global-styles'
 import Section from '../components/section'
-import logo from '../images/gatsby-icon.png'
+import app from '../images/app.svg'
 
 
 import Layout from '../components/layout'
@@ -23,9 +23,13 @@ const IndexPage = () => (
         <HeroA href="/">Watch the video</HeroA>
       </HeroGroup>
     </Hero>
-    <Section
-      // title="This is the title"
-      // text="Here is some nice text."
+    <Section img={app}
+      title="This is the title"
+      text="Here is some nice text."
+    />
+    <Section img={app} alternate
+      title="This is the title"
+      text="Here is some nice text."
     />
   </Layout>
 )

@@ -9,7 +9,7 @@ const HeaderContainer = styled.div`
   position: fixed;
   width: 100%;
   padding: ${props => (props.scrolled ? `20px 0` : `40px 0`)};
-  z-index: 100;
+  z-index: 10000;
   background: ${props => (props.scrolled ? `white` : null)};
   box-shadow: ${props => (props.scrolled ? `rgba(72, 76, 87, 0.1) 0px 1px 3px` : null)};
   transition: .4s cubic-bezier(0.2, 0.8, 0.2, 1);
