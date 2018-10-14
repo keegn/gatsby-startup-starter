@@ -23,7 +23,7 @@ const IndexPage = () => (
         <HeroA href="/">Watch the video</HeroA>
       </HeroGroup>
     </Hero>
-    <Section logo={logo}
+    <Section
       title="This is the title"
       text="Here is some nice text."
     />

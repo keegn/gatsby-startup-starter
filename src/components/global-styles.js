@@ -26,13 +26,17 @@ a {
     color: #5334F5;
     font-weight: 600;
 }
+.active {
+    font-weight: 700;
+    color: rgba(22, 23, 26, 1);
+}
 `
 // Keyframes
 
 const HeroAnimation = keyframes`
   0% {
     opacity: 0;
-    transform: translateY(15px);
+    transform: translateY(5px);
   }
   100% {
     opacity: 1;
@@ -94,22 +98,22 @@ export const HeroP = styled.p`
   opacity: 0;
 `
 export const HeroA = styled.button`
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 600;
   color: white;
   text-transform: none;
-  background: rgba(85, 58, 235, 1);
-  padding: 12px 28px;
+  background: #874EF4;
+  box-shadow: 0 2px 0 0 #6416d0;
+  padding: 1.6rem 2.4rem 1.4rem;
   text-decoration: none;
-  border-radius: 1px;
+  border-radius: 4px;
   outline: none;
   border: none;
   cursor: pointer;
   transition: 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
   &:hover {
-    background: rgba(85, 58, 235, 1);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-    transform: translateY(-2px);
+    transform: translateY(-1px);
+    background: #7325df;
   }
 `
 // End Hero

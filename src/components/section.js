@@ -3,12 +3,20 @@ import styled from 'styled-components'
 import Wave from './wave'
 
 const SectionGroup = styled.div`
-    background: #5CCE87;
+    background: rgba(135, 78, 244, .05);
     height: 600px;
     display: grid;
     grid-template-rows: 200px auto;
     grid-gap: 20px;
     position: relative;
+    @media (max-width: 600px) {
+        margin-top: 24px;
+    }
+`
+
+const SplitSection = styled.div`
+    display: grid;
+    grid-template-columns: 2;
 `
 const SectionLogo = styled.img`
     align-self: end;
@@ -31,10 +39,10 @@ const SectionTitle = styled.h3`
     font-size: 32px;
     margin: 0;
     line-height: 1.2;
-    color: white;
+    color: rgba(22, 23, 26, 1);
 `
 const SectionText = styled.p`
-    color: white;
+    color: rgba(22, 23, 26, 1);
 `
 const WaveBottom = styled.div`
     positiion: absolute;

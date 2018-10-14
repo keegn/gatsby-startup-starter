@@ -28,10 +28,6 @@ const HeaderLink = styled(Link)`
   font-weight: 500;
   font-size: 1.6rem;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  &:active{
-    font-weight: 700;
-    color: rgba(22, 23, 26, 1);
-  }
 `
 
 
@@ -39,9 +35,9 @@ const Header = ({ siteTitle }) => (
   <HeaderContainer>
     <HeaderGroup>
       <HeaderLink to="/"><RotateLogo src={target} alt="logo" width="20"></RotateLogo></HeaderLink>
-      <HeaderLink to="/product" activeClassName="active">Product</HeaderLink>
-      <HeaderLink to="/pricing" activeClassName="active">Pricing</HeaderLink>
-      <HeaderLink to="/sign-up">Get Demo</HeaderLink>
+      <HeaderLink exact to="/product" activeClassName="active">Product</HeaderLink>
+      <HeaderLink to="/">Pricing</HeaderLink>
+      <HeaderLink to="/">Get Demo</HeaderLink>
     </HeaderGroup>
   </HeaderContainer>
 )
