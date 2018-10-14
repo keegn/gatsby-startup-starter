@@ -75,7 +75,7 @@ export const HeroSplit = styled.div`
 `
 export const HeroGroupH1 = styled.h1`
   margin: 0;
-  color: #233e48;
+  color:rgba(22, 23, 26, 1);
   font-size: 48px;
   line-height: 1.2;
   opacity: 0;
@@ -86,7 +86,7 @@ export const HeroGroupH1 = styled.h1`
   animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
 `
 export const HeroP = styled.p`
-  color: rgba(51, 62, 72, 0.9);
+  color:  rgba(73, 76, 87, 1);
   line-height: 1.2;
   font-size: 20px;
   padding: 0 0 16px 0;

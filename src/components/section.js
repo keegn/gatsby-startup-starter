@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import Wave from './wave'
 
 const SectionGroup = styled.div`
-    background: rgba(85, 58, 235, 1);
+    background: #5CCE87;
     height: 600px;
     display: grid;
     grid-template-rows: 200px auto;
@@ -40,6 +40,7 @@ const WaveBottom = styled.div`
     positiion: absolute;
     width: 100%;
     bottom: 0;
+    height: 100px;
 `
 
 const WaveTop= styled.div`
