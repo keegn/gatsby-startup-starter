@@ -50,7 +50,7 @@ export const LogoAnimation = keyframes`
 // Hero
 export const Hero = styled.div`
   background: white;
-  height: 680px;
+  height: 500px;
   background-size: cover;
   background-position: center;
   margin: 0px;
@@ -99,7 +99,7 @@ export const HeroA = styled.button`
   color: white;
   text-transform: none;
   background: rgba(85, 58, 235, 1);
-  padding: 12px 40px;
+  padding: 12px 28px;
   text-decoration: none;
   border-radius: 1px;
   outline: none;
@@ -116,17 +116,17 @@ export const HeroA = styled.button`
 
 // Section
 
-export const StyledSection = styled.section`
-  height: 500px;
-  background-position: center;
-  background: rgba(85, 58, 235, 1);
-  position: relative;
-  svg {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-`
+// export const StyledSection = styled.section`
+//   height: 500px;
+//   background-position: center;
+//   background: rgba(85, 58, 235, 1);
+//   position: relative;
+//   svg {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//   }
+// `
 
 // Buttons
 

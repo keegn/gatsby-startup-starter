@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import polygon from '../images/polygon-purple.svg'
+import target from '../images/polygon-purple.svg'
 import styled from 'styled-components'
-import { LogoAnimation } from './global-styles'
+// import { LogoAnimation } from './global-styles'
 // we could also {require('../images/gatsby-icon.png')} within the src={} - helpful if you have lots of images
 
 const HeaderContainer = styled.div`
@@ -12,7 +12,7 @@ const HeaderContainer = styled.div`
     z-index: 100;
 `
 const RotateLogo = styled.img`
-  animation: ${LogoAnimation} .5s;
+  ${'' /* animation: ${LogoAnimation} .5s; */}
 `
 const HeaderGroup = styled.div`
     display: grid;
@@ -33,7 +33,7 @@ const HeaderLink = styled(Link)`
 const Header = ({ siteTitle }) => (
   <HeaderContainer>
     <HeaderGroup>
-      <HeaderLink to="/"><RotateLogo src={polygon} alt="logo" width="20"></RotateLogo></HeaderLink>
+      <HeaderLink to="/"><RotateLogo src={target} alt="logo" width="20"></RotateLogo></HeaderLink>
       <HeaderLink to="/product">Product</HeaderLink>
       <HeaderLink to="/pricing">Pricing</HeaderLink>
       <HeaderLink to="/sign-up">Get Demo</HeaderLink>
