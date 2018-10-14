@@ -109,7 +109,13 @@ export const HeroA = styled.button`
   border-radius: 4px;
   outline: none;
   border: none;
+  opacity: 0;
   cursor: pointer;
+  animation: ${HeroAnimation};
+  animation-duration: 2s;
+  animation-delay: 0.04s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
   transition: 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
   &:hover {
     transform: translateY(-1px);
