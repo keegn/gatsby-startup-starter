@@ -57,12 +57,12 @@ export const Hero = styled.div`
   height: 500px;
   background-size: cover;
   background-position: center;
-  margin: 0px;
+  margin: 0;
 `
 export const HeroGroup = styled.div`
   margin: 0 auto;
   max-width: 600px;
-  padding: 150px 50px;
+  padding: 175px 50px 150px;
   text-align: center;
   @media (max-width: 600px) {
     margin: 0 auto;

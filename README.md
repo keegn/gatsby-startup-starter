@@ -3,10 +3,10 @@
 ## 🚧 status
 ~~Navigation~~ <br />
 Mobile navigation <br />
-Hero section <br />
+~~Hero section~~ <br />
 Features section <br />
 Email signup <br />
-Footer
+~~Footer~~
   
 ## authors
 Keegan Burkett

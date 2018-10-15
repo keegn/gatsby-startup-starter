@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const SectionGroup = styled.div`
   background: white;
-  padding: 75px 0;
+  padding: 50px 0;
   height: auto;
   display: grid;
   position: relative;
