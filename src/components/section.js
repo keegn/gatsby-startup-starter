@@ -39,12 +39,14 @@ const SectionTitleGroup = styled.div`
 const SectionTitle = styled.h3`
   font-size: 32px;
   margin: 0;
-  line-height: 1.2;
+  line-height: 1.4;
   color: rgba(22, 23, 26, 1);
 `
 const SectionText = styled.p`
-  color: rgba(22, 23, 26, 1);
+  color: rgba(73, 76, 87, 1);
   max-width: 400px;
+  font-size: 1.8rem;
+  line-height: 1.6;
 `
 
 const Section = props => (

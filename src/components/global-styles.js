@@ -7,11 +7,10 @@ injectGlobal`
 html {
     font-size: 62.5%;
     box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-     font-size: 2rem;
      -webkit-font-smoothing: antialiased;
     line-height: 1.4;
 }
@@ -80,7 +79,7 @@ export const HeroSplit = styled.div`
 export const HeroGroupH1 = styled.h1`
   margin: 0;
   color: rgba(22, 23, 26, 1);
-  font-size: 48px;
+  font-size: 4.8rem;
   line-height: 1.2;
   opacity: 0;
   animation: ${HeroAnimation};
@@ -92,13 +91,13 @@ export const HeroGroupH1 = styled.h1`
 export const HeroP = styled.p`
   color: rgba(73, 76, 87, 1);
   line-height: 1.2;
-  font-size: 20px;
+  font-size: 2rem;
   padding: 0 0 16px 0;
   animation: ${HeroAnimation} 2s 0.2s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
   opacity: 0;
 `
 export const HeroA = styled.button`
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 600;
   color: white;
   text-transform: none;
