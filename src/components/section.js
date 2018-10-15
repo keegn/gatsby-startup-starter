@@ -21,6 +21,7 @@ const SectionCard = styled.div`
   @media (max-width: 860px) {
     grid-template-columns: 1fr;
     justify-items: center;
+    padding: 0 24px;
   }
 `
 
@@ -30,6 +31,7 @@ const SectionImg = styled.img`
   order: ${props => (props.alternate ? `-1` : `0`)};
   @media (max-width: 860px) {
     width: 600px;
+    order: ${props => (props.alternate ? `0` : `1`)};
   }
 `
 const SectionTitleGroup = styled.div`
@@ -40,7 +42,7 @@ const SectionTitleGroup = styled.div`
   }
 `
 const SectionTitle = styled.h3`
-  font-size: 32px;
+  font-size: 3.2rem;
   margin: 0;
   line-height: 1.4;
   color: rgba(22, 23, 26, 1);

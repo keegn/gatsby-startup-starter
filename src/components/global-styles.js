@@ -65,8 +65,7 @@ export const HeroGroup = styled.div`
   text-align: center;
   @media (max-width: 600px) {
     margin: 0 auto;
-    max-width: 500px;
-    padding: 110px 50px;
+    padding: 150px 24px;
     text-align: center;
   }
 `
@@ -125,17 +124,6 @@ export const HeroA = styled.button`
 
 // Section
 
-// export const StyledSection = styled.section`
-//   height: 500px;
-//   background-position: center;
-//   background: rgba(85, 58, 235, 1);
-//   position: relative;
-//   svg {
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//   }
-// `
 
 // Buttons
 
