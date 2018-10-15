@@ -2,18 +2,17 @@ import React from 'react'
 import styled from 'styled-components'
 
 export const WaveBottom = styled.div`
-    positiion: absolute;
-    width: 100%;
-    bottom: 0;
-    
+  positiion: absolute;
+  width: 100%;
+  bottom: 0;
 `
 
-export const WaveTop= styled.div`
-    positiion: absolute;
-    width: 100%;
-    top: 0;
-    height: 100px;
-    transform: rotate(180deg);
+export const WaveTop = styled.div`
+  positiion: absolute;
+  width: 100%;
+  top: 0;
+  height: 100px;
+  transform: rotate(180deg);
 `
 
 export const Wave = () => (
@@ -42,4 +41,3 @@ export const Wave = () => (
     </path>
   </svg>
 )
-

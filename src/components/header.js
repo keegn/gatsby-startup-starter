@@ -2,8 +2,6 @@ import React from 'react'
 import { Link } from 'gatsby'
 import target from '../images/box.svg'
 import styled from 'styled-components'
-// import { LogoAnimation } from './global-styles'
-// we could also {require('../images/gatsby-icon.png')} within the src={} - helpful if you have lots of images
 
 const HeaderContainer = styled.div`
   position: fixed;
@@ -11,8 +9,9 @@ const HeaderContainer = styled.div`
   padding: ${props => (props.scrolled ? `20px 0` : `40px 0`)};
   z-index: 10000;
   background: ${props => (props.scrolled ? `white` : null)};
-  box-shadow: ${props => (props.scrolled ? `rgba(72, 76, 87, 0.1) 0px 1px 3px` : null)};
-  transition: .4s cubic-bezier(0.2, 0.8, 0.2, 1);
+  box-shadow: ${props =>
+    props.scrolled ? `rgba(72, 76, 87, 0.1) 0px 1px 3px` : null};
+  transition: 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
 `
 const RotateLogo = styled.img`
   ${'' /* animation: ${LogoAnimation} .5s; */};

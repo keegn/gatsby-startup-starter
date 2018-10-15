@@ -9,7 +9,6 @@ html {
     box-sizing: border-box;
 }
 
-
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
      font-size: 2rem;
@@ -26,6 +25,7 @@ a {
     color: #5334F5;
     font-weight: 600;
 }
+
 .active {
     font-weight: 700;
     color: rgba(22, 23, 26, 1);
@@ -79,7 +79,7 @@ export const HeroSplit = styled.div`
 `
 export const HeroGroupH1 = styled.h1`
   margin: 0;
-  color:rgba(22, 23, 26, 1);
+  color: rgba(22, 23, 26, 1);
   font-size: 48px;
   line-height: 1.2;
   opacity: 0;
@@ -90,7 +90,7 @@ export const HeroGroupH1 = styled.h1`
   animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
 `
 export const HeroP = styled.p`
-  color:  rgba(73, 76, 87, 1);
+  color: rgba(73, 76, 87, 1);
   line-height: 1.2;
   font-size: 20px;
   padding: 0 0 16px 0;
@@ -102,7 +102,7 @@ export const HeroA = styled.button`
   font-weight: 600;
   color: white;
   text-transform: none;
-  background: #874EF4;
+  background: #874ef4;
   box-shadow: 0 2px 0 0 #6416d0;
   padding: 1.6rem 2.4rem 1.4rem;
   text-decoration: none;

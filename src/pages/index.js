@@ -9,7 +9,6 @@ import {
 import Section from '../components/section'
 import app from '../images/app.svg'
 
-
 import Layout from '../components/layout'
 
 const IndexPage = () => (
@@ -23,13 +22,18 @@ const IndexPage = () => (
         <HeroA href="/">Watch the video</HeroA>
       </HeroGroup>
     </Hero>
-    <Section img={app}
+    <Section
+      img={app}
       title="This is the title"
       text="Here is some nice text."
+      alt="Product feature illustration"
     />
-    <Section img={app} alternate
+    <Section
+      img={app}
+      alternate
       title="This is the title"
       text="Here is some nice text."
+      alt="Product feature illustration"
     />
   </Layout>
 )

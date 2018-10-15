@@ -43,7 +43,7 @@ class Footer extends React.Component {
         <FooterLink to="/">
             <RotateLogo src={target} alt="logo" width="20" />
           </FooterLink>
-          <FooterLink exact to="/product" activeClassName="active">
+          <FooterLink exact to="/product">
             Product
           </FooterLink>
           <FooterLink to="/">Pricing</FooterLink>

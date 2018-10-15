@@ -52,7 +52,7 @@ const Section = props => (
         <SectionTitle>{props.title}</SectionTitle>
         <SectionText>{props.text}</SectionText>
       </SectionTitleGroup>
-      <SectionImg src={props.img}/>
+      <SectionImg src={props.img} alt={props.alt} />
     </SectionCard>
   </SectionGroup>
 )
