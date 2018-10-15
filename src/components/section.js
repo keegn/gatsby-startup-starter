@@ -15,7 +15,7 @@ const SectionGroup = styled.div`
 const SectionCard = styled.div`
   display: grid;
   grid-template-columns: minmax(max-content, 400px) minmax(max-content, 400px);
-  align-items: top;
+  align-items: center;
   justify-items: center;
   border-radius: 4px;
   @media (max-width: 700px) {
@@ -44,6 +44,7 @@ const SectionTitle = styled.h3`
 `
 const SectionText = styled.p`
   color: rgba(22, 23, 26, 1);
+  max-width: 400px;
 `
 
 const Section = props => (

@@ -15,24 +15,24 @@ const IndexPage = () => (
   <Layout>
     <Hero>
       <HeroGroup>
-        <HeroGroupH1>Intelligent business software.</HeroGroupH1>
+        <HeroGroupH1>Professional messenger for schools</HeroGroupH1>
         <HeroP>
-          Reinventing business software with the help of smart machines.
+          Speed up the learning process through intelligent communication tools. 
         </HeroP>
         <HeroA href="/">Watch the video</HeroA>
       </HeroGroup>
     </Hero>
     <Section
       img={app}
-      title="This is the title"
-      text="Here is some nice text."
+      title="The future is now"
+      text="Here is some nice text. Two exquisite objection delighted deficient yet its contained. Cordial because are account evident its subject but eat. Can properly followed learning prepared you doubtful yet him. Over many our good lady feet ask that. Expenses own moderate day fat trifling stronger sir domestic feelings. Itself at be answer always exeter up do."
       alt="Product feature illustration"
     />
     <Section
       img={app}
       alternate
-      title="This is the title"
-      text="Here is some nice text."
+      title="Students deserve better"
+      text="Here is some nice text. Two exquisite objection delighted deficient yet its contained. Cordial because are account evident its subject but eat. Can properly followed learning prepared you doubtful yet him. Over many our good lady feet ask that. Expenses own moderate day fat trifling stronger sir domestic feelings. Itself at be answer always exeter up do."
       alt="Product feature illustration"
     />
   </Layout>
