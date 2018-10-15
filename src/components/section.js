@@ -4,16 +4,17 @@ import styled from 'styled-components'
 const SectionGroup = styled.div`
   background: white;
   padding: 75px 0;
-  height: 400px;
+  height: auto;
   display: grid;
   position: relative;
+  justify-items: center;
   @media (max-width: 600px) {
     margin-top: 24px;
   }
 `
 const SectionCard = styled.div`
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: minmax(max-content, 400px) minmax(max-content, 400px);
   align-items: top;
   justify-items: center;
   border-radius: 4px;
@@ -26,11 +27,11 @@ const SectionCard = styled.div`
 const SectionImg = styled.img`
   width: 500px;
   z-index: 100;
-  order: ${props => props.alternate ? `-1` : `0`};
+  order: ${props => (props.alternate ? `-1` : `0`)};
 `
 const SectionTitleGroup = styled.div`
   margin: 0 50px;
-  order: ${props => props.alternate ? `1` : `0`};
+  order: ${props => (props.alternate ? `1` : `0`)};
   @media (max-width: 720px) {
     margin: 0;
   }
