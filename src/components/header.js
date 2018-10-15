@@ -14,20 +14,34 @@ const HeaderContainer = styled.div`
   transition: 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
 `
 const RotateLogo = styled.img`
-  ${'' /* animation: ${LogoAnimation} .5s; */};
+  justify-self: start;
 `
+const SignUpLink = styled(Link)`
+  justify-self: end;
+  background: none;
+  border: none;
+  color: #874ef4;
+  outline: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1.6rem;
+  text-decoration: none;
+`
+
 const HeaderGroup = styled.div`
   display: grid;
-  grid-template-columns: repeat(4, auto);
+  grid-template-columns: minmax(auto, 1fr) repeat(3, 10rem) 1fr;
   align-items: center;
-  justify-items: center;
   margin: 0 auto;
   max-width: 800px;
+  font-weight: 500;
 `
 const HeaderLink = styled(Link)`
   color: rgba(73, 76, 87, 1);
   text-decoration: none;
   font-weight: 500;
+  display: grid;
+  justify-items: center;
   font-size: 1.6rem;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -66,7 +80,8 @@ class Header extends React.Component {
             Product
           </HeaderLink>
           <HeaderLink to="/">Pricing</HeaderLink>
-          <HeaderLink to="/">Get Demo</HeaderLink>
+          <HeaderLink to="/">Demo</HeaderLink>
+          <SignUpLink to="/">Sign Up</SignUpLink>
         </HeaderGroup>
       </HeaderContainer>
     )

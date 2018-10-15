@@ -14,25 +14,28 @@ const SectionGroup = styled.div`
 `
 const SectionCard = styled.div`
   display: grid;
-  grid-template-columns: minmax(max-content, 400px) minmax(max-content, 400px);
+  grid-template-columns: minmax(max-content, 1fr) minmax(max-content, 1fr);
   align-items: center;
   justify-items: center;
   border-radius: 4px;
-  @media (max-width: 700px) {
+  @media (max-width: 860px) {
     grid-template-columns: 1fr;
     justify-items: center;
   }
 `
 
 const SectionImg = styled.img`
-  width: 500px;
+  width: 400px;
   z-index: 100;
   order: ${props => (props.alternate ? `-1` : `0`)};
+  @media (max-width: 860px) {
+    width: 600px;
+  }
 `
 const SectionTitleGroup = styled.div`
   margin: 0 50px;
   order: ${props => (props.alternate ? `1` : `0`)};
-  @media (max-width: 720px) {
+  @media (max-width: 860px) {
     margin: 0;
   }
 `
@@ -44,9 +47,12 @@ const SectionTitle = styled.h3`
 `
 const SectionText = styled.p`
   color: rgba(73, 76, 87, 1);
-  max-width: 400px;
+  max-width: 350px;
   font-size: 1.8rem;
   line-height: 1.6;
+  @media (max-width: 860px) {
+    max-width: 800px;
+  }
 `
 
 const Section = props => (
