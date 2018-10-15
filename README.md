@@ -7,6 +7,7 @@ Mobile navigation <br />
 Features section <br />
 Email signup <br />
 ~~Footer~~
+View progress via Netlify: https://upbeat-kalam-356bdd.netlify.com/
   
 ## authors
 Keegan Burkett
