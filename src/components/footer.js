@@ -16,7 +16,7 @@ const FooterGroup = styled.div`
   display: grid;
   grid-template-columns: minmax(auto, 1fr) repeat(3, 10rem) 1fr;
   align-items: center;
-  grid-template-rows: 75px 1fr;
+  grid-template-rows: 100px 1fr;
   margin: 0 auto;
   max-width: 800px;
   font-weight: 500;
