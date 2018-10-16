@@ -33,7 +33,7 @@ const IndexPage = () => (
       alternate
       title="Share your knowledge"
       text="Here is some nice text. Two exquisite objection delighted deficient yet its contained. Cordial because are account evident its subject but eat. Can properly followed learning prepared you doubtful yet him."
-      alt="Product feature illustration"
+      alt="Product feature illustration number two"
     />
   </Layout>
 )
