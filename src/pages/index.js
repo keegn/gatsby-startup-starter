@@ -15,7 +15,7 @@ const IndexPage = () => (
   <Layout>
     <Hero>
       <HeroGroup>
-        <HeroGroupH1>Professional messenger for schools</HeroGroupH1>
+        <HeroGroupH1>Professional messenger for academia</HeroGroupH1>
         <HeroP>
           Speed up the learning process through intelligent communication tools.
         </HeroP>
@@ -24,14 +24,14 @@ const IndexPage = () => (
     </Hero>
     <Section
       img={app}
-      title="The future is now"
+      title="Organize your research"
       text="Here is some nice text. Two exquisite objection delighted deficient yet its contained. Cordial because are account evident its subject but eat. Can properly followed learning prepared you doubtful yet him."
       alt="Product feature illustration"
     />
     <Section
       img={app}
       alternate
-      title="Students deserve better"
+      title="Share your knowledge"
       text="Here is some nice text. Two exquisite objection delighted deficient yet its contained. Cordial because are account evident its subject but eat. Can properly followed learning prepared you doubtful yet him."
       alt="Product feature illustration"
     />
