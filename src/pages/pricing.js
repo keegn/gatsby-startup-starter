@@ -8,11 +8,11 @@ import {
 import Layout from '../components/layout'
 import Section from '../components/section'
 
-const ProductPage = () => (
+const PricingPage = () => (
   <Layout>
     <Hero>
       <HeroGroup>
-        <HeroGroupH1>Product features</HeroGroupH1>
+        <HeroGroupH1>Simple pricing</HeroGroupH1>
         <HeroP>
           Reinventing business software with the help of smart machines.
         </HeroP>
@@ -22,4 +22,4 @@ const ProductPage = () => (
   </Layout>
 )
 
-export default ProductPage
+export default PricingPage

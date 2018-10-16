@@ -73,7 +73,7 @@ class Header extends React.Component {
           <HeaderLink exact to="/product" activeClassName="active">
             Product
           </HeaderLink>
-          <HeaderLink to="/">Pricing</HeaderLink>
+          <HeaderLink to="/pricing">Pricing</HeaderLink>
           <HeaderLink to="/">Demo</HeaderLink>
           <SignUpLink to="/">Sign Up</SignUpLink>
         </HeaderGroup>
