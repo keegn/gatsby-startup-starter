@@ -29,15 +29,11 @@ const FooterLink = styled(Link)`
   display: grid;
   justify-items: center;
 `
-const RotateLogo = styled.img`
+const Logo = styled.img`
   justify-self: start;
 `
-const FollowUsLink = styled(Link)`
+const SocialLink = styled(Link)`
   justify-self: end;
-  background: none;
-  border: none;
-  outline: none;
-  cursor: pointer;
   font-weight: 500;
   font-size: 1.6rem;
   text-decoration: none;
@@ -53,12 +49,14 @@ class Footer extends React.Component {
         </WaveTop>
         <FooterGroup>
           <FooterLink to="/">
-            <RotateLogo src={target} alt="logo" width="20" />
+            <Logo src={target} alt="logo" width="20" />
           </FooterLink>
-          <FooterLink exact to="/">Terms</FooterLink>
+          <FooterLink exact to="/">
+            Terms
+          </FooterLink>
           <FooterLink to="/">Privacy</FooterLink>
           <FooterLink to="/">Contact</FooterLink>
-          <FollowUsLink to="/">Social</FollowUsLink>
+          <SocialLink to="/">Social</SocialLink>
         </FooterGroup>
       </FooterContainer>
     )

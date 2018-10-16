@@ -13,16 +13,12 @@ const HeaderContainer = styled.div`
     props.scrolled ? `rgba(72, 76, 87, 0.1) 0px 1px 3px` : null};
   transition: 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
 `
-const RotateLogo = styled.img`
+const Logo = styled.img`
   justify-self: start;
 `
 const SignUpLink = styled(Link)`
   justify-self: end;
-  background: none;
-  border: none;
   color: #874ef4;
-  outline: none;
-  cursor: pointer;
   font-weight: 500;
   font-size: 1.6rem;
   text-decoration: none;
@@ -72,7 +68,7 @@ class Header extends React.Component {
       <HeaderContainer scrolled={this.state.hasScrolled}>
         <HeaderGroup>
           <HeaderLink to="/">
-            <RotateLogo src={target} alt="logo" width="20" />
+            <Logo src={target} alt="logo" width="20" />
           </HeaderLink>
           <HeaderLink exact to="/product" activeClassName="active">
             Product

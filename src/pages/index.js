@@ -17,7 +17,7 @@ const IndexPage = () => (
       <HeroGroup>
         <HeroGroupH1>Professional messenger for schools</HeroGroupH1>
         <HeroP>
-          Speed up the learning process through intelligent communication tools. 
+          Speed up the learning process through intelligent communication tools.
         </HeroP>
         <HeroA href="/">Watch the video</HeroA>
       </HeroGroup>
