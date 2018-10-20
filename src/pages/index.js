@@ -10,6 +10,7 @@ import Section from '../components/section'
 import app from '../images/app.svg'
 
 import Layout from '../components/layout'
+// hello from layout branch
 
 const IndexPage = () => (
   <Layout>
