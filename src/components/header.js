@@ -70,9 +70,7 @@ class Header extends React.Component {
           <HeaderLink to="/">
             <Logo src={target} alt="logo" width="20" />
           </HeaderLink>
-          <HeaderLink to="/product">
-            Product
-          </HeaderLink>
+          <HeaderLink to="/product">Product</HeaderLink>
           <HeaderLink to="/pricing">Pricing</HeaderLink>
           <HeaderLink to="/">Demo</HeaderLink>
           <SignUpLink to="/">Sign Up</SignUpLink>
