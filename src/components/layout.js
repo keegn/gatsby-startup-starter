@@ -21,8 +21,15 @@ const Layout = ({ children }) => (
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
-            { name: 'description', content: 'Gatsby starter template for startups' },
-            { name: 'keywords', content: 'gatsby, react, marketing, site, starter, template, theme, simple, startup' },
+            {
+              name: 'description',
+              content: 'Gatsby starter template for startups',
+            },
+            {
+              name: 'keywords',
+              content:
+                'gatsby, react, marketing, site, starter, template, theme, simple, startup',
+            },
           ]}
         >
           <html lang="en" />
