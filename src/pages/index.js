@@ -11,7 +11,7 @@ import app from '../images/app.svg'
 
 import Layout from '../components/layout'
 
-const IndexPage = () => (
+const Index = () => (
   <Layout>
     <Hero>
       <HeroGroup>
@@ -38,4 +38,4 @@ const IndexPage = () => (
   </Layout>
 )
 
-export default IndexPage
+export default Index

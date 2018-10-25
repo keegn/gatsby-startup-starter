@@ -8,7 +8,7 @@ import {
 import Layout from '../components/layout'
 import Section from '../components/section'
 
-const PricingPage = () => (
+const Pricing = () => (
   <Layout>
     <Hero>
       <HeroGroup>
@@ -22,4 +22,4 @@ const PricingPage = () => (
   </Layout>
 )
 
-export default PricingPage
+export default Pricing
