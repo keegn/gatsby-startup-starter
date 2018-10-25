@@ -5,7 +5,7 @@ import {
   HeroGroupH1,
   HeroP,
   HeroA,
-} from '../components/global-styles'
+} from '../components/global-styles/global-styles'
 import Section from '../components/section'
 import app from '../images/app.svg'
 
