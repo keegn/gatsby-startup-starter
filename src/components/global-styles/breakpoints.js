@@ -20,7 +20,6 @@ export const media = Object.keys(sizes).reduce((accumulator, label) => {
   return accumulator
 }, {})
 
-
 /* 
 Great! Now that you've defined your media templates, you can use them like this:
 
