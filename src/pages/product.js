@@ -4,7 +4,7 @@ import {
   HeroGroup,
   HeroGroupH1,
   HeroP,
-} from '../components/global-styles/global-styles'
+} from '../components/global-styles/global'
 import Layout from '../components/layout'
 import Section from '../components/section'
 
