@@ -3,6 +3,7 @@
 ## 🚧 status
 ~~Navigation~~ <br />
 Mobile navigation <br />
+Responsive <br />
 ~~Hero section~~ <br />
 Features section <br />
 Email signup <br />
