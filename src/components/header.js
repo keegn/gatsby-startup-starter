@@ -23,7 +23,6 @@ const SignUpLink = styled(Link)`
   font-size: 1.6rem;
   text-decoration: none;
 `
-
 const HeaderGroup = styled.div`
   display: grid;
   grid-template-columns: minmax(auto, 1fr) repeat(3, 10rem) 1fr;
@@ -31,6 +30,10 @@ const HeaderGroup = styled.div`
   margin: 0 auto;
   max-width: 800px;
   font-weight: 500;
+  @media (max-width: 500px) {
+    grid-template-columns: ${props => props.grid && '1fr 1fr' };
+    padding: ${props => props.grid && '0 2rem' };
+  }
 `
 const HeaderLink = styled(Link)`
   color: rgba(73, 76, 87, 1);
@@ -39,6 +42,9 @@ const HeaderLink = styled(Link)`
   display: grid;
   justify-items: center;
   font-size: 1.6rem;
+  @media (max-width: 500px) {
+    display: ${props => (props.desktop ? 'none' : 'relative')};
+  }
 `
 
 class Header extends React.Component {
@@ -66,14 +72,22 @@ class Header extends React.Component {
   render() {
     return (
       <HeaderContainer scrolled={this.state.hasScrolled}>
-        <HeaderGroup>
+        <HeaderGroup grid>
           <HeaderLink to="/">
             <Logo src={target} alt="logo" width="20" />
           </HeaderLink>
-          <HeaderLink to="/">Product</HeaderLink>
-          <HeaderLink to="/">Pricing</HeaderLink>
-          <HeaderLink to="/">Demo</HeaderLink>
-          <SignUpLink to="/">Sign Up</SignUpLink>
+          <HeaderLink desktop to="/">
+            Product
+          </HeaderLink>
+          <HeaderLink desktop to="/">
+            Pricing
+          </HeaderLink>
+          <HeaderLink desktop to="/">
+            Demo
+          </HeaderLink>
+          <SignUpLink desktop to="/">
+            Sign Up
+          </SignUpLink>
         </HeaderGroup>
       </HeaderContainer>
     )
