@@ -1,6 +1,7 @@
 import styled, { keyframes, injectGlobal } from 'styled-components'
 import styledNormalize from 'styled-normalize'
 
+// refactor to createGlobalStyle
 injectGlobal`
   ${styledNormalize}
  
