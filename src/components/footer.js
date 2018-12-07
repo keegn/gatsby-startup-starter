@@ -20,6 +20,7 @@ const FooterGroup = styled.div`
   margin: 0 auto;
   max-width: 800px;
   font-weight: 500;
+  padding: 0 2rem;
 `
 const FooterLink = styled(Link)`
   color: white;

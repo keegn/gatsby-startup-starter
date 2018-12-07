@@ -28,6 +28,7 @@ const HeaderGroup = styled.div`
   grid-template-columns: minmax(auto, 1fr) repeat(3, 10rem) 1fr;
   align-items: center;
   margin: 0 auto;
+  padding: 0 2rem;
   max-width: 800px;
   font-weight: 500;
   @media (max-width: 500px) {
