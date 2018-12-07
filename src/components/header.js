@@ -31,8 +31,8 @@ const HeaderGroup = styled.div`
   max-width: 800px;
   font-weight: 500;
   @media (max-width: 500px) {
-    grid-template-columns: ${props => props.grid && '1fr 1fr' };
-    padding: ${props => props.grid && '0 2rem' };
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
   }
 `
 const HeaderLink = styled(Link)`
@@ -72,7 +72,7 @@ class Header extends React.Component {
   render() {
     return (
       <HeaderContainer scrolled={this.state.hasScrolled}>
-        <HeaderGroup grid>
+        <HeaderGroup>
           <HeaderLink to="/">
             <Logo src={target} alt="logo" width="20" />
           </HeaderLink>
