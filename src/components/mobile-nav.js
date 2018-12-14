@@ -1,5 +1,8 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import styled from 'styled-components'
+import {Logo, HeaderLink} from './header'
+import target from '../images/box.svg'
 
 const MobileNavContainer = styled.div`
   height: 100vh;
@@ -8,12 +11,11 @@ const MobileNavContainer = styled.div`
 `
 const MobileNavGroup = styled.div`
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(auto, 1fr);
   align-items: center;
   margin: 0 auto;
-  max-width: 800px;
+  padding: 0;
   font-weight: 500;
+  grid-template-columns: 1fr 1fr;
 `
 
 const MobileLink = styled(Link)`
@@ -23,23 +25,26 @@ const MobileLink = styled(Link)`
   display: grid;
   justify-items: center;
   font-size: 2.4rem;
-  padding: 20px;
 `
 const CloseNav = styled(Link)`
   background: none;
   border: none;
   color: #874ef4;
   font-weight: 500;
-  font-size: 2.4rem;
+  font-size: 1.6rem;
   text-decoration: none;
+  justify-self: end;
 `
 
 const MobileNav = props => (
   <MobileNavContainer>
     <MobileNavGroup>
-      <CloseNav to="/">Close Menu</CloseNav>
-      <MobileLink to="/">Home</MobileLink>
+    <HeaderLink to="/">
+      <Logo src={target} alt="logo" width="20" />
+    </HeaderLink>
+      <CloseNav onClick={() => props.handleMenuToggle()} to="/">Close</CloseNav>
     </MobileNavGroup>
+    <MobileLink to="/">Home</MobileLink>
   </MobileNavContainer>
 )
 

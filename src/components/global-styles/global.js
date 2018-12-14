@@ -20,7 +20,9 @@ img {
   max-width: 100%;
   height: auto;
 }
-
+section {
+  padding: 5rem 0;
+}
 a {
     color: #5334F5;
     font-weight: 600;
