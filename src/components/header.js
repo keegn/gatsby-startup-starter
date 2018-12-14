@@ -17,7 +17,7 @@ const HeaderContainer = styled.div`
 export const Logo = styled.img`
   justify-self: start;
 `
-const MobileMenuLink = styled(Link)`
+const MobileMenuLink = styled.span`
   justify-self: end;
   color: #874ef4;
   font-weight: 500;
@@ -115,7 +115,7 @@ class Header extends React.Component {
                 <SignUpLink desktop to="/">
                   Sign Up
                 </SignUpLink>
-                <MobileMenuLink onClick={''} mobile to="/">
+                <MobileMenuLink onClick={''} mobile>
                   Menu
                 </MobileMenuLink>
               </>

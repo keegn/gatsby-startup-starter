@@ -26,7 +26,7 @@ const MobileLink = styled(Link)`
   justify-items: center;
   font-size: 2.4rem;
 `
-const CloseNav = styled(Link)`
+const CloseNav = styled.span`
   background: none;
   border: none;
   color: #874ef4;
