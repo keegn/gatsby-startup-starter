@@ -89,34 +89,39 @@ class Header extends React.Component {
   handleMenuToggle = event => {
     this.setState(prevState => ({ menuIsOpen: !prevState.menuIsOpen }))
   }
-
+  
+  // Removed onClick={this.handleMenuToggle} from menu until polished
   render() {
     return (
       <>
-          <HeaderContainer scrolled={this.state.hasScrolled}>
-            <HeaderGroup>
-              <HeaderLink to="/">
-                <Logo src={target} alt="logo" width="20" />
-              </HeaderLink>
-              {this.state.menuIsOpen ? (<MobileNav handleMenuToggle={this.handleMenuToggle} />) : (
+        <HeaderContainer scrolled={this.state.hasScrolled}>
+          <HeaderGroup>
+            <HeaderLink to="/">
+              <Logo src={target} alt="logo" width="20" />
+            </HeaderLink>
+            {this.state.menuIsOpen ? (
+              <MobileNav handleMenuToggle={this.handleMenuToggle} />
+            ) : (
               <>
-              <HeaderLink desktop to="/">
-                Product
-              </HeaderLink>
-              <HeaderLink desktop to="/">
-                Pricing
-              </HeaderLink>
-              <HeaderLink desktop to="/">
-                Demo
-              </HeaderLink>
-              <SignUpLink desktop to="/">
-                Sign Up
-              </SignUpLink>
-              <MobileMenuLink onClick={this.handleMenuToggle} mobile to="/">
-                Menu
-              </MobileMenuLink></>)}
-            </HeaderGroup>
-          </HeaderContainer>
+                <HeaderLink desktop to="/">
+                  Product
+                </HeaderLink>
+                <HeaderLink desktop to="/">
+                  Pricing
+                </HeaderLink>
+                <HeaderLink desktop to="/">
+                  Demo
+                </HeaderLink>
+                <SignUpLink desktop to="/">
+                  Sign Up
+                </SignUpLink>
+                <MobileMenuLink onClick={''} mobile to="/">
+                  Menu
+                </MobileMenuLink>
+              </>
+            )}
+          </HeaderGroup>
+        </HeaderContainer>
       </>
     )
   }
