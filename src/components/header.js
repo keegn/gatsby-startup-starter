@@ -89,7 +89,7 @@ class Header extends React.Component {
   handleMenuToggle = event => {
     this.setState(prevState => ({ menuIsOpen: !prevState.menuIsOpen }))
   }
-  
+
   // Removed onClick={this.handleMenuToggle} from menu until polished
   render() {
     return (
