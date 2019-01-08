@@ -90,7 +90,7 @@ export const HeroGroupH1 = styled.h1`
   animation-fill-mode: forwards;
   animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
   @media (max-width: 600px) {
-    font-size: 3.4rem;
+    font-size: 3.6rem;
   }
 `
 export const HeroP = styled.p`

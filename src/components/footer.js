@@ -21,6 +21,9 @@ const FooterGroup = styled.div`
   max-width: 800px;
   font-weight: 500;
   padding: 0 2rem;
+  @media (max-width: 600px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
 `
 const FooterLink = styled(Link)`
   color: white;
@@ -29,6 +32,9 @@ const FooterLink = styled(Link)`
   font-size: 1.6rem;
   display: grid;
   justify-items: center;
+  @media (max-width: 600px) {
+    display: ${props => props.mobileDisplayNone && 'none'}
+  }
 `
 const Logo = styled.img`
   justify-self: start;
@@ -39,6 +45,9 @@ const SocialLink = styled(Link)`
   font-size: 1.6rem;
   text-decoration: none;
   color: white;
+  @media (max-width: 600px) {
+    justify-self: center;
+  }
 `
 
 class Footer extends React.Component {
@@ -49,7 +58,7 @@ class Footer extends React.Component {
           <Wave />
         </WaveTop>
         <FooterGroup>
-          <FooterLink to="/">
+          <FooterLink mobileDisplayNone to="/">
             <Logo src={target} alt="logo" width="20" />
           </FooterLink>
           <FooterLink exact to="/">
