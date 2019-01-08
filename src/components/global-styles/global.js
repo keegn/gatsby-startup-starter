@@ -89,6 +89,9 @@ export const HeroGroupH1 = styled.h1`
   animation-delay: 0.01s;
   animation-fill-mode: forwards;
   animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
+  @media (max-width: 600px) {
+    font-size: 3.4rem;
+  }
 `
 export const HeroP = styled.p`
   color: rgba(73, 76, 87, 1);

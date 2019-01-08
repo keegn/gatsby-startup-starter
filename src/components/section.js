@@ -9,7 +9,7 @@ const SectionGroup = styled.div`
   position: relative;
   justify-items: center;
   @media (max-width: 600px) {
-    padding-top: 24px;
+    padding-top: 50px;
   }
 `
 const SectionCard = styled.div`
