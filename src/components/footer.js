@@ -33,7 +33,7 @@ const FooterLink = styled(Link)`
   display: grid;
   justify-items: center;
   @media (max-width: 600px) {
-    display: ${props => props.mobileDisplayNone && 'none'}
+    display: ${props => props.mobileDisplayNone && 'none'};
   }
 `
 const Logo = styled.img`
