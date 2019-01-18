@@ -1,4 +1,4 @@
-# A minimalist Gatsby starter theme for startups
+# A minimalist Gatsby starter for startups
 
 ## 🚧 status
 ~~Navigation~~ <br />
